@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Message Form</title>
+  </head>
+  <body class="darkmode">
+    <!-- <div class="theme">
+      <h3>Theme switch:</h3>
+      <label id="theme-switch" class="ui-switch">
+        <input type="checkbox" />
+        <div class="slider">
+          <div class="circle"></div>
+        </div>
+      </label>
+    </div> -->
+    <!-- Button to delete messages -->
+    <!-- <div id="loading" class="loading" style="display: none">Thinking...</div> -->
+    <div class="load-container">
+      <div id="loading" class="loader" style="display: none">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+    <!-- Loading message -->
+    <div id="response" class="response" style="display: none"></div>
+    <div class="container">
+      <div class="previous-messages" id="previousMessages"></div>
+    </div>
+
+    <input id="message" class="inputMessage" placeholder="Type a message..." />
+    <button id="send">Send</button>
+    <button id="deleteMessages">Delete Previous Messages</button>
+
+    <!-- Area for past messages -->
+    <div class="footer">
+      | DEVELOPER GHOST-IT-TEAM | <br />| CHRISTIAN | XYNN | ADONIS |
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
